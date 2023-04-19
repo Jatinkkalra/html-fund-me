@@ -1,0 +1,22 @@
+When Building dApps, you usually have 2 repos:
+1. Smart Contract aka Backend repo
+2. Website aka Frontend repo
+
+Full Stack = Smart Contract (backend) + Html / JS / Website (frontend)
+
+
+Setup:
+Use `!` to get boiler plate in `index.html`
+Create "./index.js" file to write website script, then import it via "<script src="./index.js">"
+In console: `yarn add --dev prettier` and create file "./prettierrc" if required.
+Create "./constants.js" file to write addresses and ABI to have consistency.
+Add localhost network to Metamask
+
+
+Notes:
+In front-end javascript you can't use `require()`. You have to use `import()`
+`require()` is used in nodejs language.
+Things needed to send a transaction:
+1. Provider aka connection to the blockchain (need `ethers`)
+2. Signer aka wallet aka someone with some gas
+3. Contract that we are interacting with (Need ABI & Address for a contract)
